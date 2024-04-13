@@ -1,0 +1,320 @@
+/*!
+Theme Name: CT Custom
+Theme URI: http://underscores.me/
+Author: Coalition Technologies
+Author URI: https://coalitiontechnologies.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ct-custom
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CT Custom is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+ }
+
+ul li {
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+
+:root {
+	--orange-color: #ff6200;
+	--gray-color: #ededed;
+	--border-color: #3d3d3d;
+	--deep-orange: #be3600;
+}
+.container {
+	padding-right: 100px;
+	padding-left: 100px;
+	max-width: 1400px;
+}
+header {
+	margin-bottom: 20px;
+}
+
+.topbar {
+	background-color: var(--orange-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topbar__call h4 {
+	text-transform: uppercase;
+	color: var(--deep-orange);
+	font-size: 16px;
+}
+
+.topbar__call h4 span {
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+
+.topbar__account ul li {
+	display: inline-block;
+}
+
+.topbar__account ul li a {
+	text-transform: uppercase;
+	color: var(--deep-orange);
+}
+
+.topbar__account ul li.signup a {
+	color: #ffffff;
+	margin-left: 5px;
+}
+
+.branding {
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+
+.header__logo {
+	width: 120px;
+	height: 50px;
+}
+
+.header__logo img {
+	width: 100%;
+	height: auto;
+}
+
+.header__logo h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+
+.header__nav ul li {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+
+.header__nav ul li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 5px;
+	font-size: 14px;
+	color: #777777;
+	font-weight: bold;
+	
+}
+
+.header__nav ul li a:hover {
+	border-bottom: 1px solid var(--deep-orange);
+}
+
+.header__nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	padding: 10px;
+	width: 150px;
+	margin-top: 0px;
+}
+
+.header__nav ul li ul ul {
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
+
+.header__nav ul li:hover > ul {
+	display: block;
+}
+
+.header__nav ul li ul li {
+	display: block;
+	margin-top: 5px;
+} 
+
+
+/* Mobile header  */
+@media only screen and (max-width: 600px) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.topbar__call h4 {
+		font-size: 12px;
+	}
+	.topbar__account ul li a {
+		font-size: 13px;
+	}
+	.branding {
+		flex-direction: column;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.header__nav ul li a {
+		font-size: 11px;
+		padding: 5px;
+		margin-left: 0;
+		font-weight: normal;
+	}
+	
+}
+
+.content-area {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.breadcrumb {
+	padding: 20px 0;
+}
+
+.content {
+	padding: 30px 0; 
+}
+
+.content h2 {
+	color: var(--orange-color);
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.content p {
+	width: 80%;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.connect {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+.connect__contact {
+	width: 50%;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 10px;
+}
+
+.connect__contact input  {
+	width: 100%;
+	padding: 10px 10px;
+	background-color: #eeeeee;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.connect__contact textarea  {
+	width: 100%;
+	padding: 10px 10px;
+	background-color: #eeeeee;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.connect__contact button  {
+	padding: 10px 20px;
+	background-color: var(--orange-color); 
+	border: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.connect__socialmedia  {
+	width: 50%;
+}
+
+.connect__socialmedia h2, .connect__contact h2 {
+	color: var(--orange-color);
+	border-bottom: 3px solid var(--border-color);
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.connect__socialmedia p {
+		margin-bottom: 20px;
+		line-height: 1.5em;
+}
+
+.connect__socialmedia ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.connect__socialmedia ul li a {
+	background-color: #D3D3D3;
+	padding: 6px 10px;
+}
+
+.connect__socialmedia ul li a.active {
+	background-color: var(--border-color);
+}
+
+/* Mobile content  */
+@media only screen and (max-width: 600px) {
+	.content-area {
+		padding-top: 0;
+	}
+
+	.content p {
+		width: 100%;
+	}
+
+	.connect {
+		flex-direction: column;
+	}
+
+	.connect__contact {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.connect__socialmedia {
+		width: 100%;
+	}
+}
+
+
+.site-footer {
+	background-color: #000000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
