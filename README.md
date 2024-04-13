@@ -4,7 +4,7 @@
 
 ### Project Overview
 
-This project involved the development of a custom WordPress theme with various features, including a homepage template (`homepage.php`), mobile responsiveness, theme settings page, menu creation, and manageable page content.
+This project involved the development of a custom WordPress theme (underscores as base theme) with various features, including a homepage template (`homepage.php`), mobile responsiveness, theme settings page, menu creation, and manageable page content.
 
 ### Project Description
 
